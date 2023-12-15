@@ -5,14 +5,14 @@ def primes(number_of_primes):
     if number_of_primes < 1:
         raise ValueError(" The number must be positive.")
     val = 2
-    num_list = []
+    list = []
 
-    while len(num_list) < number_of_primes:
+    while len(list) < number_of_primes:
         if is_prime(val):
-            num_list.append(val)
+            list.append(val)
         val+=1
     
-    return num_list
+    return list
 
 def is_prime(value):
     is_Prime = True
